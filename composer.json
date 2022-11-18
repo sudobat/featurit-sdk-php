@@ -1,5 +1,5 @@
 {
-    "name": "sudobat/featurit-sdk-php",
+    "name": "featurit/featurit-sdk-php",
     "description": "PHP SDK for FeaturIT",
     "autoload": {
         "psr-4": {

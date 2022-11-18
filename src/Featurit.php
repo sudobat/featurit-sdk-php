@@ -45,7 +45,9 @@ class Featurit
             $storage->addPlugin($plugin);
 
             $storage->getOptions()->setTtl($ttlMinutes * 60);
-            $storage->getOptions()->setCacheDir('cache');
+            $storage->getOptions()->setCacheDir(
+                join(DIRECTORY_SEPARATOR, [dirname(__FILE__), '..', 'cache'])
+            );
 
             $cache = new SimpleCacheDecorator($storage);
         }
