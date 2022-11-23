@@ -74,6 +74,14 @@ class Featurit
         );
     }
 
+    /**
+     * @throws \Http\Client\Exception
+     */
+    public function isActive(string $featureName): bool
+    {
+        return $this->featureFlags()->isActive($featureName);
+    }
+
     public function featureFlags(): FeatureFlags
     {
         return new Endpoints\FeatureFlags($this);
