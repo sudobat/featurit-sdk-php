@@ -25,7 +25,7 @@ class Featurit
     public function __construct(
         string         $tenantIdentifier,
         string         $apiKey,
-        int            $ttlMinutes = 5,
+        int            $cacheTtlMinutes = 5,
         CacheInterface $cache = null,
         ClientBuilder  $clientBuilder = null,
         UriFactory     $uriFactory = null
@@ -44,7 +44,7 @@ class Featurit
             $plugin = new Serializer();
             $storage->addPlugin($plugin);
 
-            $storage->getOptions()->setTtl($ttlMinutes * 60);
+            $storage->getOptions()->setTtl($cacheTtlMinutes * 60);
             $storage->getOptions()->setCacheDir(
                 join(DIRECTORY_SEPARATOR, [dirname(__FILE__), '..', 'cache'])
             );
