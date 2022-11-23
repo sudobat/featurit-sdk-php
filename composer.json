@@ -1,10 +1,23 @@
 {
     "name": "featurit/featurit-sdk-php",
     "description": "PHP SDK for FeaturIT",
+    "keywords": ["featurit", "feature flag", "feature toggle", "user targeting", "a/b testing", "feature", "feature management"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "FeaturIT",
+            "email": "featurit_tech@gmail.com",
+            "homepage": "https://www.featurit.com"
+        }
+    ],
     "autoload": {
         "psr-4": {
-            "Featurit\\Client\\Tests\\": "tests/",
             "Featurit\\Client\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Featurit\\Client\\Tests\\": "tests/",
         }
     },
     "minimum-stability": "dev",
