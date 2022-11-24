@@ -1,7 +1,7 @@
 {
     "name": "featurit/featurit-sdk-php",
     "description": "PHP SDK for FeaturIT",
-    "keywords": ["featurit", "feature flag", "feature toggle", "user targeting", "a/b testing", "feature", "feature management"],
+    "keywords": ["featurit", "feature flag", "feature toggle", "user targeting", "a b testing", "feature", "feature management"],
     "license": "MIT",
     "authors": [
         {
