@@ -17,7 +17,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Featurit\\Client\\Tests\\": "tests/",
+            "Featurit\\Client\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "dev",
